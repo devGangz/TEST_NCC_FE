@@ -1,0 +1,72 @@
+body{
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box; 
+    width: 1918px;
+    height: 938px;
+    top: 938px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+aside{
+    /* border: 1px solid; */
+    background-color:#191718;
+    width: 150px;
+    height: 938px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: -1px;
+}
+
+/* Căn chỉnh thẻ ul */
+ul{
+    position: absolute;
+    padding-top: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* Định dạng cho thẻ li */
+ul li{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #aaaaaa;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    height: 30px;
+    width: 150px;
+    border-bottom: 1px solid #5c5c5c ;
+    background-color: #191718;
+    z-index: 10;
+    /* cursor: pointer; mockup chỉ show con trỏ bình thường, nên em tắt cursor pointer */
+}
+/* Màu trắng cho nút home */
+ul li:first-of-type{
+    color: white;
+
+}
+/*  Hiệu ứng khi di chuột đến các nút*/
+li:hover {
+    background-color: #5c5c5c;
+    color: white;
+}
+
+/* Căn chỉnh footer */
+
+footer{
+    position: absolute;
+    right: 0;
+    background-color: #b32828 ;
+    border: 1px solid black;
+    width: 1768px;
+    height: 79px;
+    z-index: 10;
+}
+
+
+/* Responsive */
