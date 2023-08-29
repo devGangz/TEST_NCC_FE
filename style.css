@@ -3,20 +3,19 @@ body{
     overflow: hidden;
     box-sizing: border-box; 
     width: 1918px;
-    height: 938px;
-    top: 938px;
-    /* border: 1px solid black; */
+    height: 935px;
     margin: 0 auto;
 }
-
+/* Căn chỉnh SideBar */
 aside{
     /* border: 1px solid; */
     background-color:#191718;
     width: 150px;
-    height: 938px;
+    height: 935px;
     margin-top: 0px;
     position: relative;
     margin-left: -1px;
+    /* margin left để 0 sẽ có chút màu trắng nên e để -1px */
 }
 
 /* Căn chỉnh thẻ ul */
@@ -35,9 +34,9 @@ ul li{
     font-weight: 500;
     color: #aaaaaa;
     box-sizing: border-box;
-    padding-left: 12px;
-    padding-top: 12px;
-    padding-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
     height: 30px;
     width: 150px;
     border-bottom: 1px solid #5c5c5c ;
@@ -60,13 +59,141 @@ li:hover {
 
 footer{
     position: absolute;
-    right: 0;
-    background-color: #b32828 ;
-    border: 1px solid black;
-    width: 1768px;
+    left: 150px;
+    background-color: white ;
+    width: 1770px;
     height: 79px;
     z-index: 10;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    border-top: 1px solid #dedede;
+    padding-left: 130px;
+}
+
+/* Căn chỉnh content (thẻ main) */
+main{
+    height: 935px ;
+    width: 1770px;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+
+main img{
+    margin-top: 20px;
+    height: 122px;
+    width: 310px;
+    margin-bottom: 1.5rem;
+}
+
+.blockGrey{
+    width: 1510px;
+    height: 210px;
+    background-color: #EFEFEF;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.blockGrey section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blockGrey h2{
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+    
+}
+
+.blockGrey p{
+    width: 972px;
+    height: 95px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    margin: 0 auto;
+}
+
+.block3parts{
+    
+    display: flex;
+    width: 1510px;
+    height: 252px;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+
+
+.parent{
+    display: block;
+    width: 470px;
+    height: 252px;
+    justify-content: center;
+}
+
+.parent h2{
+    font-family: 'Roboto';
+    width: 470px;
+    height: 28px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+}
+
+.child_A{
+    display: flex;
+    justify-content: space-between;
+    height: 134px;
+    
+}
+
+.child____01 img{
+    width: 128px;
+    height: 128px;
+}
+
+
+.child____02 p{
+    width: 326px;
+    height: 134px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+
+
+.child_B p{
+    width: 470px;
+    height: 72px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    /* border: 1px solid red; */
+    
 }
 
 
 /* Responsive */
+
+
